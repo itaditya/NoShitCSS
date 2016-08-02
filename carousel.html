@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carousel | CSS</title>
+    <link type="text/css" rel="stylesheet" href="css/carousel.css"/>
+    <!-- <link rel="shortcut icon" type="image/ico" href="images/favicon.ico"> -->
+</head>
+<body>
+	<div class="container">
+		<div class="carousel-outer" data-loadtype="lazy">
+			<div class="carousel-inner">
+				<ul class="carousel-images">
+					<li data-src="media/banner-1.png"></li>
+					<li data-src="media/banner-2.png"></li>
+					<li data-src="media/b3.jpg"></li>
+					<li data-src="media/b4.jpg"></li>	
+					<li data-src="media/banner-1.png"></li>	
+					<li data-src="media/b3.jpg"></li>		
+				</ul>
+			</div>
+			<button class="carousel-btn" id="cprev"></button>
+			<button class="carousel-btn" id="cnext"></button>
+			<button class="" id="cload">Load</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/carousel.js"></script>
+</body>
+
+<!-- Usage Notes -->
+<!--
+  > Make a div and give class carousel-outer then nest everything as done here .
+  > Give carousel-inner the width and height you require.
+  > In the li , make data-src atrributes and give them relative add of images wrt html file . 
+  > Add buttons and give them classes and id as given . 
+  > carousel-outer contains centrally the image slides and p,n buttons around it ,
+    so any styling of these buttons won't affect the slides .
+  > Use negative value of left , right to move buttons outside the slides or +ve for inside it.
+  > Set data-loadtype in carousel-outer to define whether lazy load or simple.
+-->

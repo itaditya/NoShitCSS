@@ -7,16 +7,41 @@ body{
     background: #2196F3;
     letter-spacing: 2px;
 }
-.accordion {
-	padding: 2px 10px;
-	box-sizing:border-box;
-	position: relative;
-	width: 50%;
-	background: #fff;
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 100vh;
 }
-.accordion-hide {
+.accordion-container {
+    padding: 12px 10px;
+    box-sizing:border-box;
+    position: relative;
+    /*width: 100%;*/
+    width: 500px;
+    background: #fff;
+    border-radius: 4px;
+}
+.accordion {
+    padding: 2px 10px;
+    position: relative;
+    transition: 2s ease-in-out;
+    outline: none;
+    /*width: 50%;*/
+}
+.accordion-collapse {
 	overflow: hidden;
 	height: 150px;
+}
+.accordion:focus {
+    overflow-y: visible;
+    height: initial;
+}
+.accordion h1{
+    color: #333;
+}
+.accordion p{
+    color: #222;
 }
 .reveal-btn {
 	margin-top: 20px;
